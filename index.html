@@ -126,7 +126,7 @@ body {
 .code pre {
   font-family: 'Inconsolata', Menlo, Monaco, Consolas, "Lucida Console", monospace;
   color: #333;
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
   line-height: 1em;
   margin: 0;
 }
@@ -161,10 +161,7 @@ body {
   }
 }
 @media screen and (max-width: 766px) {
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, sh4 {
     text-align: center;
   }
   .comment {
@@ -225,15 +222,14 @@ body {
     <div class="section">
       <div class="comment grid-40 mobile-grid-100 not-empty">
         <h1>Wannabe - Spice Girls</h1>
-        original lyrics here...
-        http://www.azlyrics.com/lyrics/spicegirls/wannabe.html
-       
-        If you want my future forget my past, <br>
+        <a href="http://www.azlyrics.com/lyrics/spicegirls/wannabe.html" target="_blank"> original lyrics </a>
+        
+<br>       
+If you want my future forget my past, <br>
 If you wanna get with me better make it fast, <br>
 Now don't go wasting my precious time, <br>
 Get your act together we could be just fine <br>
 <br>
-
 I'll tell you what I want, what I really really want, <br>
 So tell me what you want, what you really really want, <br>
 I wanna, I wanna, I wanna, I wanna, <br>
@@ -245,7 +241,7 @@ Make it last forever friendship never ends, <br>
 If you wanna be my lover, you have got to give, <br>
 Taking is too easy, but that's the way it is. <br>
 <br>
-...
+...<br>
 I won't be hasty, I'll give you a try <br>
 If you really bug me then I'll say goodbye. <br>
 <br>        
@@ -257,33 +253,53 @@ So here's a story from A to Z, you wanna get with me you gotta listen carefully.
       </div>
       <div class="code grid-60 mobile-grid-100 not-empty">
         <pre>
-        If (you want my future)
-  forget my past, 
+Are you what I want
+	what I really really want?
+
+If (you want my future)
+{
+	forget my past
+}
+
 If (you wanna get with me)
-  better make it fast, 
-Now don't go wasting my precious time, 
-Get your act together we could be just fine 
+{
+  better make it fast
+}
 
-I'll tell you what I want, what I really really want, 
-So tell me what you want, what you really really want, 
-I wanna, I wanna, I wanna, I wanna, I wanna really really really wanna zigazig ha. 
+// Now don't go wasting my precious time, --> return false
+
+If you (get your act together)
+{
+	we could be just fine 
+} 
+
+
 
 If (you wanna be my lover)
-  you gotta get with my friends 
-  Make it last forever
-  friendship never ends, 
-  //while (friendship has not ended) … make it last
-If (you wanna be my lover)
-  you have got to give, 
-  Taking is too easy, but that's the way it is. 
+{  
+	you gotta get with my friends 
 
-I won't be hasty, I'll give you a try 
+	while (friendship has not ended)	
+	{
+		Make it last 	// i.e. forever
+	}
+}
+
+If (you wanna be my lover)
+{
+	you have got to give
+}
+
+// I won't be hasty, I'll give you a try 
 If (you really bug me)
-  then I'll say goodbye. 
+{
+	then I'll say goodbye. 
+}
+If (you wanna get with me)
+{
+	you gotta listen carefully // to the story from A to Z
+}
 
-///So here's a story from A to Z, you wanna get with me you gotta listen carefully, 
-you wanna get with me
-you gotta listen carefully to the story from A to Z, 
 
 
         </pre>
@@ -297,26 +313,57 @@ you gotta listen carefully to the story from A to Z,
     <div class="section">
       <div class="comment grid-40 mobile-grid-100 not-empty">
         <h1>Genie in a Bottle - Christina Aguilera</h1>
-        original lyrics here....
-        
-        http://www.azlyrics.com/lyrics/christinaaguilera/genieinabottle.html
+        <a href="http://www.azlyrics.com/lyrics/christinaaguilera/genieinabottle.html" target="_blank"> original lyrics </a>
+        <br>
+        <!--I feel like I've been locked up tight<br>
+		For a century of lonely nights<br>
+		Waiting for someone to release me<br
+		You're lickin' your lips<br>
+		And blowing kisses my way<br>
+		But that don't mean I'm gonna give it away<br>
+		Baby, baby, baby<br>
+        <br>-->
+        If you wanna be with me <br>
+		Baby there's a price to pay <br>
+		I'm a genie in a bottle <br>
+		You gotta rub me the right way <br>
+		<br>
+		If you wanna be with me<br>
+		I can make your wish come true<br>
+		You gotta make a big impression<br>
+		Gotta like what you do<br>
+		<br>
+		If you wanna be with me<br>
+		I can make your wish come true<br>
+		Just come and set me free, baby<br>
+		And I'll be with you<br>
+		<br>
         
       </div>
       <div class="code grid-60 mobile-grid-100 not-empty">
       <pre>
-        if  ( you wanna be with me )
-        {
-      If ( priceToPay == true)  // Baby there's a price to pay
-    (Me == genie in a bottle)   // I'm a genie in a bottle
-    You gotta rub me the right way --> return true
 
-        // I can make your wish come true
-        // You gotta make a big impression (Oh yeah)
-        // Gotta like what you do
-        // I can make your wish come true
-        // Just come and set me free baby
-        //  And  --> I'll be with you 
-        }
+If  ( you wanna be with me )
+{
+	If ( priceToPay == true)  		// Baby there's a price to pay
+    {
+    	Me == genie in a bottle   	// I'm a genie in a bottle
+    	Genie.RubTheRightWay 		// You gotta rub me the right way
+    }
+    
+    If ( "I can make your wish come true" == true )
+    {
+    	If ( you make a big impression OR like what you do )
+    	// You gotta make a big impression
+     	//	Gotta like what you do)
+
+     	If you ( "Just come and set me free baby" )
+    	{
+    		return "I'll be with you";	//  And I'll be with you 
+    	}
+    } 
+        
+}
         </pre>
       </div>
     </div>
