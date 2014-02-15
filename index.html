@@ -254,35 +254,47 @@ So here's a story from A to Z, you wanna get with me you gotta listen carefully.
       <div class="code grid-60 mobile-grid-100 not-empty">
         <pre>
 Are you what I want
-	what I really really want?
+	(what I really really want)?
 
 If (you want my future)
 {
-	forget my past
+   // forget my past
+   if (you can forget my past) --> continue
+   else --> false; "you can't have my future"
 }
 
 If (you wanna get with me)
 {
-  better make it fast
+   // better make it fast
+   if (you will make it fast)
+   {
+   	--> continue
+   } 
+   else 	// otherwise
+   {
+   		return "You can't get with me"
+
+   		//Can you get with me? = false;
+   		// return false;
+   }
 }
 
 // Now don't go wasting my precious time, --> return false
+If (you go wasting my precious time) return false;
 
 If you (get your act together)
 {
-	we could be just fine 
+   return "we could be just fine"
 } 
-
-
 
 If (you wanna be my lover)
 {  
-	you gotta get with my friends 
+   you gotta get with my friends 
 
-	while (friendship has not ended)	
-	{
-		Make it last 	// i.e. forever
-	}
+   while (friendship has not ended)	
+   {
+      Make it last 	// i.e. forever
+   }
 }
 
 If (you wanna be my lover)
@@ -345,10 +357,12 @@ If (you wanna get with me)
 
 If  ( you wanna be with me )
 {
-	If ( priceToPay == true)  		// Baby there's a price to pay
+	If ( there is a price to pay)  	// Baby there's a price to pay
     {
     	Me == genie in a bottle   	// I'm a genie in a bottle
-    	Genie.RubTheRightWay 		// You gotta rub me the right way
+
+    	if (GenieInABottle.Rub == the right way)	// You gotta rub me the right way
+    		return true;		
     }
     
     If ( "I can make your wish come true" == true )
@@ -359,7 +373,7 @@ If  ( you wanna be with me )
 
      	If you ( "Just come and set me free baby" )
     	{
-    		return "I'll be with you";	//  And I'll be with you 
+    		return result = "I'll be with you";	//  And I'll be with you 
     	}
     } 
         
@@ -419,26 +433,29 @@ Ya, gotta be g's you way outta your league
 // Please!
 
 We like dem boys that:
-  be in them lac's leanin'
-  Open their mouth their grill gleamin'
-  Candy paint, keep that whip clean and
+  (be in them lac's leanin') OR
+  (Open their mouth their grill gleamin') OR
+  (Candy paint, keep that whip clean and) OR
   They always be talkin that country slang we like
   ...
 A rude boy && that's good to me, && wit street credibility
 
-If your status ain't hood
-  I ain't checkin' for him → return false
+If (your status ain't hood)
+{
+	I ain't checkin' for him → return false
+}
 If (he’s ! street) // Betta be street if he lookin' at me
 I need a soldier
   (That ain't scared to stand up for me) OR
-  (Known to carry big things)  // If you know what I mean OR
+  <!--(Known to carry big things)  // If you know what I mean OR-->
 (Gotta know to get dough && he betta be street)
 
+<!--
 [Second Rap: Lil Wayne]
 If you don't see me on the block
   I ain't tryna hide
   I blend in wit the hood, i'm camouflage
-
+-->
         
         
         
@@ -485,21 +502,38 @@ If (only you saw what I can see,)
       </div>
       <div class="code grid-60 mobile-grid-100 not-empty">
         <pre>
-        If (you don't have a car && you're walking) 
-else if (you live at home wit' your momma)
-else if (you have a shorty that you don't show love)
-  → Oh yes son I'm talking to you
 
-Wanna get with me with no money
-  Oh no I don't want no (oh)
+If (
+    (you don't have a car && you're walking)
+    OR
+    (you live at home wit' your momma)  
+    OR
+    (you have a shorty that you don't show love)
+   )
+   {
+   	--> Oh yes son, I'm talking to you  
+   	you = scrub
+   }
 
-No scrub (no scrub, no love)
-[Left Eye:] See, 
+
+If you (Wanna get with me && your money == 0) // Wanna get with me with no money
+{
+  Oh no I don't want no...
+  you = scrub
+}
+
+//No scrub --> (no scrub, no love)
+
+If (you == scrub)
+{
+	return "no love";
+}
+<!--[Left Eye:] See, 
 if (you can't spatially expand my horizon)
   Then that leaves you in a class with scrubs never risin'
 
 If (you don't have the g's To please me and bounce from here to the coast of overseas)
-  I don't find it surprisin'
+  I don't find it surprisin'-->
       
         </pre>
       </div>
