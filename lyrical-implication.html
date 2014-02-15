@@ -1,0 +1,189 @@
+<html><head>
+	<title>http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js | ExplainJS</title>
+
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/unsemantic.css">
+	<link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/explain.css">
+	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	
+  <style type="text/css"></style>
+
+  </head>
+  <body>
+	
+	<div class="page-menu">
+		<div class="grid-container">
+			<div class="grid-60 mobile-grid-100">
+			    <a class="logo" href="/">ExplainJS</a> for <a class="src-title" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js">bootstrap.js</a>
+			</div>
+			<div class="grid-40 hide-on-mobile">
+				<a class="explain-own" href="/">Explain Your Own &gt;</a>
+			</div>
+		</div>
+	</div>
+	
+	
+		<div class="sections grid-container">
+	        <div class="code-bg hide-on-mobile"></div>
+		    <br><br>		
+				  			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> MODAL NO CONFLICT</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $.fn.modal.noConflict = function () {
+    $.fn.modal = old
+    return this
+  }
+
+</pre></div>
+				  </div>			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> MODAL DATA-API</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $(document).on('click.modal.data-api', '[data-toggle="modal"]', function (e) {
+    var $this = $(this)
+      , href = $this.attr('href')
+      , $target = $($this.attr('data-target') || (href &amp;&amp; href.replace(/.*(?=#[^\s]+$)/, ''))) //strip for ie7
+      , option = $target.data('modal') ? 'toggle' : $.extend({ remote:!/#/.test(href) &amp;&amp; href }, $target.data(), $this.data())
+
+    e.preventDefault()
+
+    $target
+      .modal(option)
+      .one('hide', function () {
+        $this.focus()
+      })
+  })
+
+}(window.jQuery);
+</pre></div>
+				  </div>			
+				  			
+			
+				  			
+				  			
+			
+				  			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> DROPDOWN PLUGIN DEFINITION</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  var old = $.fn.dropdown
+
+  $.fn.dropdown = function (option) {
+    return this.each(function () {
+      var $this = $(this)
+        , data = $this.data('dropdown')
+      if (!data) $this.data('dropdown', (data = new Dropdown(this)))
+      if (typeof option == 'string') data[option].call($this)
+    })
+  }
+
+  $.fn.dropdown.Constructor = Dropdown
+
+</pre></div>
+				  </div>			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> DROPDOWN NO CONFLICT</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $.fn.dropdown.noConflict = function () {
+    $.fn.dropdown = old
+    return this
+  }
+
+</pre></div>
+				  </div>			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> APPLY TO STANDARD DROPDOWN ELEMENTS</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $(document)
+    .on('click.dropdown.data-api', clearMenus)
+    .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('click.dropdown-menu', function (e) { e.stopPropagation() })
+    .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
+    .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
+
+}(window.jQuery);
+</pre></div>
+				  </div>			
+				  			
+			
+				  			
+				  <div class="clear"></div>			
+			
+				  			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> SCROLLSPY PLUGIN DEFINITION</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  var old = $.fn.scrollspy
+
+  $.fn.scrollspy = function (option) {
+    return this.each(function () {
+      var $this = $(this)
+        , data = $this.data('scrollspy')
+        , options = typeof option == 'object' &amp;&amp; option
+      if (!data) $this.data('scrollspy', (data = new ScrollSpy(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  $.fn.scrollspy.Constructor = ScrollSpy
+
+  $.fn.scrollspy.defaults = {
+    offset: 10
+  }
+
+</pre></div>
+				  </div>			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> SCROLLSPY NO CONFLICT</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $.fn.scrollspy.noConflict = function () {
+    $.fn.scrollspy = old
+    return this
+  }
+
+</pre></div>
+				  </div>			
+				  <div class="clear"></div>			
+			
+				  <div class="section">
+					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> SCROLLSPY DATA-API</h1></div>
+					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $(window).on('load', function () {
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this)
+      $spy.scrollspy($spy.data())
+    })
+  })
+
+}(window.jQuery);</pre></div>
+				  </div>			
+				  <div class="clear"></div>			
+				
+			
+				  			
+				  			
+					
+		</div>
+	
+	
+	<div class="footer">
+		ExplainJS is by <a href="http://twitter.com/bendytree">Josh Wright</a>. <a href="http://underscorejs.org/docs/underscore.html"> Also see this for layout inspiration. </a>
+	</div>
+    <div class="clear"></div>
+	<br>
+
+
+	
+  
+</body></html>
