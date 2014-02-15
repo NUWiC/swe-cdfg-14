@@ -217,6 +217,14 @@ body {
     <br>
     <br>
 
+Concepts:
+<ul>
+<li> Logical implication, if-then statements, cause/effect </li>
+<li> = vs == </li>
+<li> Polymorphism (without explicitly referencing it) - when each type of girl evaluates a guy, the function they do is different, even though they are all girls </li>
+</ul>
+    <br><br>
+
 <!-- --------------------------------------------- -->
 
     <div class="section">
@@ -483,7 +491,7 @@ If (only you saw what I can see,)
 {
   You'd understand why I want you so desperately,
   Right now I'm looking at you and I can't believe,
-  You don't know, Oh, oh,
+  // You don't know, Oh, oh,
   You don't know you're beautiful, Oh, oh,
     → That's what makes you beautiful
 }
@@ -503,31 +511,37 @@ If (only you saw what I can see,)
       <div class="code grid-60 mobile-grid-100 not-empty">
         <pre>
 
-If (
-    (you don't have a car && you're walking)
-    OR
-    (you live at home wit' your momma)  
-    OR
-    (you have a shorty that you don't show love)
+function AreYouAScrub(PotentialSuitor you)
+{
+   If
+   (
+      (you don't have a car && you're walking)
+      OR
+      (you live at home wit' your momma)  
+      OR
+      (you have a shorty that you don't show love)
    )
    {
-   	--> Oh yes son, I'm talking to you  
-   	you = scrub
+   	   // --> Oh yes son, I'm talking to you  
+   	   you = scrub
    }
 
 
-If you (Wanna get with me && your money == 0) // Wanna get with me with no money
-{
-  Oh no I don't want no...
-  you = scrub
-}
+   If you (Wanna get with me && your money == 0) // Wanna get with me with no money
+   {
+      Oh no I don't want no...
+      you = scrub
+   }
 
 //No scrub --> (no scrub, no love)
 
-If (you == scrub)
-{
-	return "no love";
+   If (you == scrub)
+   {
+	  return "no love";
+   }
+
 }
+
 <!--[Left Eye:] See, 
 if (you can't spatially expand my horizon)
   Then that leaves you in a class with scrubs never risin'
@@ -629,25 +643,36 @@ if you can't write the check, for me, for me.
       </div>
       <div class="code grid-60 mobile-grid-100 not-empty">
         <pre>
-        If (you want it to be good, girl)
-  Get yourself a bad boy
-If (you want it to be wild)
-  Gotta know just who to dial baby (that's me)
-If (you really like it hot)
-  Find someone who hits the spot honey (oh yes)
-And 
-if (you want to get it done)
-  Babe you gotta get the one
-  The one who's got it goin' on
-If (you wanna make it last)
-  Gotta know just who to ask
-  Babe he's gotta be the best
 
+If (you want it to be good, girl)
+   Get yourself a bad boy
+<!--If (you want it to be wild)
+  Gotta know just who to dial baby
+If (you really like it hot)
+  Find someone who hits the spot honey 
+And -->
+
+if (you want to get it done)
+{   Babe you gotta get the one
+	The one who's got it goin' on
+}
+
+If (you wanna make it last)
+{
+   Gotta know just who to ask
+   Babe he's gotta be the best
+}
+  
 If (you like it innovative)
-  Better get someone creative honey (yes)  ← possibly the only appropriate lyrics haha
-And 
+{
+	Better get someone creative honey 
+	<!-- ← possibly the only appropriate lyrics haha -->
+}
+  
+  
+<!--And 
 (if you want it to be jammin')
-  Gotta get somebody slammin' baby (oh yeah)
+  Gotta get somebody slammin' baby (oh yeah) -->
 
 
         </pre>
