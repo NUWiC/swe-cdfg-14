@@ -4,7 +4,191 @@
   <title>NU WiC | Lyrical Implication | SWE CDFG 2014</title>
 
   <link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/unsemantic.css">
-  <link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/explain.css">
+  <!--link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/explain.css"-->
+  <style>
+    html {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', "Lucida Grande", verdana, sans-serif;
+  font-size: 11pt;
+  color: #555;
+  height: 100%;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+.page-menu {
+  position: fixed;
+  background-color: #000;
+  height: 50px;
+  line-height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.page-menu a.logo {
+  font-size: 18pt;
+  color: #FFF;
+  text-decoration: none;
+}
+.page-menu a.logo:hover {
+  text-decoration: underline;
+}
+.page-menu a.src-title {
+  font-size: 14pt;
+  color: #5cf;
+}
+.page-menu a.src-title:hover {
+  color: #FFF;
+}
+.page-menu a.explain-own {
+  font-size: 11pt;
+  color: #FFF;
+  float: right;
+}
+.page-menu a.explain-own:hover {
+  color: #5cf;
+}
+@media screen and (max-width: 766px) {
+  body {
+    padding-top: 0;
+  }
+  .page-menu {
+    position: static;
+    text-align: center;
+  }
+}
+.error {
+  text-align: center;
+  color: #888;
+}
+.error img {
+  margin-top: 40px;
+}
+.error .title {
+  margin-top: 20px;
+  font-size: 32pt;
+  color: #333;
+}
+.error .src {
+  font-size: 20pt;
+  color: #f60;
+}
+.error .message {
+  margin-top: 25px;
+  font-size: 14pt;
+}
+.error .try-harder {
+  color: #06f;
+  font-size: 18pt;
+}
+.sections {
+  min-height: 100%;
+  position: relative;
+}
+.code-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  background-color: #f8f8f8;
+  z-index: -1;
+}
+.empty {
+  visibility: hidden;
+}
+.comment {
+  margin: 0;
+  padding: 20px 20px 20px 10px ;
+  font-family: 'Open Sans';
+  overflow: hidden;
+}
+.comment h1,
+.comment h2,
+.comment h3,
+.comment h4 {
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.comment p {
+  padding: 0;
+  margin: 0;
+}
+.code {
+  margin: 0;
+  padding: 20px 20px 20px 10px;
+  border-top: solid 1px #eee;
+}
+.code pre {
+  font-family: 'Inconsolata', Menlo, Monaco, Consolas, "Lucida Console", monospace;
+  color: #333;
+  letter-spacing: -1px;
+  line-height: 1em;
+  margin: 0;
+}
+@media screen and (max-width: 400px) {
+  div.code pre {
+    font-size: 10pt;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 559px) {
+  div.code pre {
+    font-size: 11pt;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 766px) {
+  div.code pre {
+    font-size: 12pt;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 847px) {
+  div.code pre {
+    font-size: 10pt;
+  }
+}
+@media screen and (min-width: 848px) and (max-width: 930px) {
+  div.code pre {
+    font-size: 11pt;
+  }
+}
+@media screen and (min-width: 931px) {
+  div.code pre {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 766px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+  .comment {
+    margin: 20px 0 5px;
+    padding: 0 0 0 3px !important;
+  }
+  div.code {
+    background-color: #f8f8f8;
+    padding: 10px 10px 10px 3px !important;
+    overflow-x: scroll;
+  }
+}
+.footer {
+  text-align: center;
+  color: #666;
+  margin: 40px 0;
+  font-size: 10pt;
+}
+.footer a {
+  color: #555;
+}
+
+
+  </style>
   <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
 
@@ -144,10 +328,41 @@ you gotta listen carefully to the story from A to Z,
     <div class="section">
       <div class="comment grid-40 mobile-grid-100 not-empty">
         <h1>Soldier - Destiny's Child feat. T.I. &amp; Lil Wayne</h1>
-        original lyrics here....
         
-        http://www.azlyrics.com/lyrics/destinyschild/soldier.html
+
+        <a href="http://www.azlyrics.com/lyrics/destinyschild/soldier.html" target="_blank">original lyrics</a>
+
+        <br>
+
+        [First Rap: T.I.] <br>
+        To shoot it wit Chelle and kick it wit Kelly or holla at B<br>
+        Ya, gotta be g's you way outta your league<br>
+        Please!<br>
+        <br>
+        [First Verse: Kelly]<br>
+        We like dem boys that be in them lac's leanin' (Leanin')<br>
+        Open their mouth their grill gleamin' (Gleamin')<br>
+        Candy paint, keep that whip clean and (Clean and)<br>
+        (They always be talkin that country slang, we like)<br>
+        ...<br>
+        A rude boy that's good to me, wit street credibility<br>
+        <br>
+        If your status ain't hood<br>
+        I ain't checkin' for him<br>
+        Betta be street if he lookin' at me<br>
+        I need a soldier<br>
+        That ain't scared to stand up for me<br>
+        Gotta know to get dough<br>
+        And he betta be street<br>
+        <br>
+        ...<br>
+        [Second Rap: Lil Wayne]<br>
+        If you don't see me on the block<br>
+        I ain't tryna hide<br>
+        I blend in wit the hood, i'm camouflage<br>
       </div>
+
+
       <div class="code grid-60 mobile-grid-100 not-empty">
         <pre>
         
@@ -161,8 +376,7 @@ We like dem boys that:
   Open their mouth their grill gleamin'
   Candy paint, keep that whip clean and
   They always be talkin that country slang we like
-  They keep that beat that be in the back beatin'
-  Eyes be so low from that chief
+  ...
 A rude boy && that's good to me, && wit street credibility
 
 If your status ain't hood
