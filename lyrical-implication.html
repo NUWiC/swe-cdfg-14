@@ -1,189 +1,383 @@
-<html><head>
-	<title>http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js | ExplainJS</title>
+<html>
 
-	
-	
-	
-	<link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/unsemantic.css">
-	<link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/explain.css">
-	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
-	
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
-	
+<head>
+  <title>NU WiC | Lyrical Implication | SWE CDFG 2014</title>
+
+  <link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/unsemantic.css">
+  <link rel="stylesheet" type="text/css" href="http://www.explainjs.com/static/css/explain.css">
+  <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
   <style type="text/css"></style>
 
-  </head>
-  <body>
-	
-	<div class="page-menu">
-		<div class="grid-container">
-			<div class="grid-60 mobile-grid-100">
-			    <a class="logo" href="/">ExplainJS</a> for <a class="src-title" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js">bootstrap.js</a>
-			</div>
-			<div class="grid-40 hide-on-mobile">
-				<a class="explain-own" href="/">Explain Your Own &gt;</a>
-			</div>
-		</div>
-	</div>
-	
-	
-		<div class="sections grid-container">
-	        <div class="code-bg hide-on-mobile"></div>
-		    <br><br>		
-				  			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> MODAL NO CONFLICT</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $.fn.modal.noConflict = function () {
-    $.fn.modal = old
-    return this
-  }
+</head>
 
-</pre></div>
-				  </div>			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> MODAL DATA-API</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $(document).on('click.modal.data-api', '[data-toggle="modal"]', function (e) {
-    var $this = $(this)
-      , href = $this.attr('href')
-      , $target = $($this.attr('data-target') || (href &amp;&amp; href.replace(/.*(?=#[^\s]+$)/, ''))) //strip for ie7
-      , option = $target.data('modal') ? 'toggle' : $.extend({ remote:!/#/.test(href) &amp;&amp; href }, $target.data(), $this.data())
+<body>
 
-    e.preventDefault()
+  <div class="page-menu">
+     
+    <div class="grid-container">
+      <div class="grid-60 mobile-grid-100">
+        <a class="logo" href="/">Lyrical Implication planning</a>by
+        <a class="src-title" href="">NU WiC</a>
+        <a href="https://docs.google.com/a/u.northwestern.edu/document/d/1gYxutLKu4F9GqCVc1K0DHs6woDnagrae4-ST5nl08M4/edit" target="_blank">original doc </a>
+      </div>
+      <!--div class="grid-40 hide-on-mobile">
+        <a class="explain-own" href="/">Explain Your Own &gt;</a>
+      </div-->
+    </div>
+  </div>
 
-    $target
-      .modal(option)
-      .one('hide', function () {
-        $this.focus()
-      })
-  })
 
-}(window.jQuery);
-</pre></div>
-				  </div>			
-				  			
-			
-				  			
-				  			
-			
-				  			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> DROPDOWN PLUGIN DEFINITION</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  var old = $.fn.dropdown
+  <div class="sections grid-container">
+    <div class="code-bg hide-on-mobile"></div>
+    <br>
+    <br>
 
-  $.fn.dropdown = function (option) {
-    return this.each(function () {
-      var $this = $(this)
-        , data = $this.data('dropdown')
-      if (!data) $this.data('dropdown', (data = new Dropdown(this)))
-      if (typeof option == 'string') data[option].call($this)
-    })
-  }
+<!-- --------------------------------------------- -->
 
-  $.fn.dropdown.Constructor = Dropdown
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>Wannabe - Spice Girls</h1>
+        original lyrics here...
+        http://www.azlyrics.com/lyrics/spicegirls/wannabe.html
+       
+        If you want my future forget my past, <br>
+If you wanna get with me better make it fast, <br>
+Now don't go wasting my precious time, <br>
+Get your act together we could be just fine <br>
+<br>
 
-</pre></div>
-				  </div>			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> DROPDOWN NO CONFLICT</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $.fn.dropdown.noConflict = function () {
-    $.fn.dropdown = old
-    return this
-  }
+I'll tell you what I want, what I really really want, <br>
+So tell me what you want, what you really really want, <br>
+I wanna, I wanna, I wanna, I wanna, <br>
+I wanna really really really wanna zigazig ha. <br>
+<br>
+If you wanna be my lover, <br>
+you gotta get with my friends (gotta get with my friends) <br>
+Make it last forever friendship never ends, <br>
+If you wanna be my lover, you have got to give, <br>
+Taking is too easy, but that's the way it is. <br>
+<br>
+...
+I won't be hasty, I'll give you a try <br>
+If you really bug me then I'll say goodbye. <br>
+<br>        
+So here's a story from A to Z, you wanna get with me you gotta listen carefully...<br>
 
-</pre></div>
-				  </div>			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> APPLY TO STANDARD DROPDOWN ELEMENTS</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $(document)
-    .on('click.dropdown.data-api', clearMenus)
-    .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
-    .on('click.dropdown-menu', function (e) { e.stopPropagation() })
-    .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
-    .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
+        
+        
+        
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        If (you want my future)
+	forget my past, 
+If (you wanna get with me)
+	better make it fast, 
+Now don't go wasting my precious time, 
+Get your act together we could be just fine 
 
-}(window.jQuery);
-</pre></div>
-				  </div>			
-				  			
-			
-				  			
-				  <div class="clear"></div>			
-			
-				  			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> SCROLLSPY PLUGIN DEFINITION</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  var old = $.fn.scrollspy
+I'll tell you what I want, what I really really want, 
+So tell me what you want, what you really really want, 
+I wanna, I wanna, I wanna, I wanna, I wanna really really really wanna zigazig ha. 
 
-  $.fn.scrollspy = function (option) {
-    return this.each(function () {
-      var $this = $(this)
-        , data = $this.data('scrollspy')
-        , options = typeof option == 'object' &amp;&amp; option
-      if (!data) $this.data('scrollspy', (data = new ScrollSpy(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
+If (you wanna be my lover)
+	you gotta get with my friends 
+	Make it last forever
+	friendship never ends, 
+	//while (friendship has not ended) … make it last
+If (you wanna be my lover)
+	you have got to give, 
+	Taking is too easy, but that's the way it is. 
 
-  $.fn.scrollspy.Constructor = ScrollSpy
+I won't be hasty, I'll give you a try 
+If (you really bug me)
+	then I'll say goodbye. 
 
-  $.fn.scrollspy.defaults = {
-    offset: 10
-  }
+///So here's a story from A to Z, you wanna get with me you gotta listen carefully, 
+you wanna get with me
+you gotta listen carefully to the story from A to Z, 
 
-</pre></div>
-				  </div>			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> SCROLLSPY NO CONFLICT</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $.fn.scrollspy.noConflict = function () {
-    $.fn.scrollspy = old
-    return this
-  }
 
-</pre></div>
-				  </div>			
-				  <div class="clear"></div>			
-			
-				  <div class="section">
-					  <div class="comment grid-40 mobile-grid-100 not-empty"><h1> SCROLLSPY DATA-API</h1></div>
-					  <div class="code grid-60 mobile-grid-100 not-empty"><pre>  $(window).on('load', function () {
-    $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this)
-      $spy.scrollspy($spy.data())
-    })
-  })
-
-}(window.jQuery);</pre></div>
-				  </div>			
-				  <div class="clear"></div>			
-				
-			
-				  			
-				  			
-					
-		</div>
-	
-	
-	<div class="footer">
-		ExplainJS is by <a href="http://twitter.com/bendytree">Josh Wright</a>. <a href="http://underscorejs.org/docs/underscore.html"> Also see this for layout inspiration. </a>
-	</div>
+        </pre>
+      </div>
+    </div>
     <div class="clear"></div>
-	<br>
+    
+    
+    <!-- --------------------------------------------- -->
+
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>Genie in a Bottle - Christina Aguilera</h1>
+        original lyrics here....
+        
+        http://www.azlyrics.com/lyrics/christinaaguilera/genieinabottle.html
+        
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+      <pre>
+        if  ( you wanna be with me )
+        {
+	    If ( priceToPay == true)	// Baby there's a price to pay
+		(Me == genie in a bottle) 	// I'm a genie in a bottle
+		You gotta rub me the right way --> return true
+
+        // I can make your wish come true
+        // You gotta make a big impression (Oh yeah)
+        // Gotta like what you do
+        // I can make your wish come true
+        // Just come and set me free baby
+        //	And  --> I'll be with you	
+        }
+        </pre>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    
+    <!-- --------------------------------------------- -->
+
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>Soldier - Destiny's Child feat. T.I. &amp; Lil Wayne</h1>
+        original lyrics here....
+        
+        http://www.azlyrics.com/lyrics/destinyschild/soldier.html
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        
+[First Rap: T.I.]
+Ya, gotta be g's you way outta your league
+	To shoot it wit Chelle and kick it wit Kelly or holla at B
+// Please!
+
+We like dem boys that:
+	be in them lac's leanin'
+	Open their mouth their grill gleamin'
+	Candy paint, keep that whip clean and
+	They always be talkin that country slang we like
+	They keep that beat that be in the back beatin'
+	Eyes be so low from that chief
+A rude boy && that's good to me, && wit street credibility
+
+If your status ain't hood
+	I ain't checkin' for him → return false
+If (he’s ! street) // Betta be street if he lookin' at me
+I need a soldier
+	(That ain't scared to stand up for me) OR
+	(Known to carry big things)  // If you know what I mean OR
+(Gotta know to get dough && he betta be street)
+
+[Second Rap: Lil Wayne]
+If you don't see me on the block
+	I ain't tryna hide
+	I blend in wit the hood, i'm camouflage
+
+        
+        
+        
+        </pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    <!-- --------------------------------------------- -->
+    
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>What Makes You Beautiful - One Direction</h1>
+
+        original lyrics here...
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        // Baby you light up my world like nobody else,
+// The way that you flip your hair gets me overwhelmed,
+// But when you smile at the ground it ain't hard to tell,
+// You don't know, Oh, oh,
+You don't know you're beautiful,
+If (only you saw what I can see,)
+{
+	You'd understand why I want you so desperately,
+	Right now I'm looking at you and I can't believe,
+	You don't know, Oh, oh,
+	You don't know you're beautiful, Oh, oh,
+		→ That's what makes you beautiful
+}
+        </pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    
+    <!-- --------------------------------------------- -->
+    
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>No Scrubs (Remix) - TLC</h1>
+        orignal lryics here...
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        If (you don't have a car && you're walking) 
+else if (you live at home wit' your momma)
+else if (you have a shorty that you don't show love)
+	→ Oh yes son I'm talking to you
+
+Wanna get with me with no money
+	Oh no I don't want no (oh)
+
+No scrub (no scrub, no love)
+[Left Eye:] See, 
+if (you can't spatially expand my horizon)
+	Then that leaves you in a class with scrubs never risin'
+
+If (you don't have the g's To please me and bounce from here to the coast of overseas)
+	I don't find it surprisin'
+      
+        </pre>
+      </div>
+    </div>
+
+    <div class="clear"></div>
 
 
-	
+  <!-- --------------------------------------------- -->
+    
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>If You Can Afford Me - Katy Perry</h1>
+        orignal lryics here...
+        
+        http://www.azlyrics.com/lyrics/katyperry/ifyoucanaffordme.html
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        
+        
+        /*
+things i am: me = 
+	a cherry on top == the pick of the peck == The crème de la crop.
+things i'm not: me !=
+	a piece of a** || a one night stand || a storage shed
+*/
+
+If you want (a cherry on top || the pick of the peck || the creme de la crop)
+	// must be referring to me, because i am these things
+If (you want me)
+	you better do better than that tonight.
+If (you want me), 	// more than a wink and more than a drink and more than you think
+	what it takes is ( > wink && > drink && > you think )
+		
+If (you want me)
+{
+	you're gonna have to break the bank, tonight.
+	Cause some don't have the patience, some call me high-maintenance
+	But you pay the bill, cause, that's the deal.
+}
+If (you want me),
+	then stop begging	// I don't put out for charity
+If (you want me)
+	there's no discount price tonight / But I don't need your dollar bills I just want something real / Cause, nothing's free, except a lovin' me
+
+If (you wanna ride), 
+	just name your price
+	don't play cheap, with your heart
+if you can't write the check, for me, for me.
+	Don't make a bet
+// Don't make a bet if you can't write the check, for me, for me.
+
+
+        </pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>If I Ain't Got You - Alicia Keys</h1>
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>$.fn.scrollspy.noConflict = function () { $.fn.scrollspy = old return this }
+
+        </pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+    <!-- --------------------------------------------- -->
+
+    <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>Back at One</h1>
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        
+
+        </pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+  <!-- --------------------------------------------- -->
   
-</body></html>
+  
+  <div class="section">
+      <div class="comment grid-40 mobile-grid-100 not-empty">
+        <h1>If You Want It To Be Good Girl (Get Yourself a Bad Boy) - Backstreet Boys</h1>
+      </div>
+      <div class="code grid-60 mobile-grid-100 not-empty">
+        <pre>
+        If (you want it to be good, girl)
+	Get yourself a bad boy
+If (you want it to be wild)
+	Gotta know just who to dial baby (that's me)
+If (you really like it hot)
+	Find someone who hits the spot honey (oh yes)
+And 
+if (you want to get it done)
+	Babe you gotta get the one
+	The one who's got it goin' on
+If (you wanna make it last)
+	Gotta know just who to ask
+	Babe he's gotta be the best
+
+If (you like it innovative)
+	Better get someone creative honey (yes)  ← possibly the only appropriate lyrics haha
+And 
+(if you want it to be jammin')
+	Gotta get somebody slammin' baby (oh yeah)
+
+
+        </pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+  <!-- --------------------------------------------- -->
+
+
+
+  </div>
+
+
+  <div class="footer">
+    Layout inspired by ExplainJS from
+    <a href="http://twitter.com/bendytree">Josh Wright</a>.
+    <a href="http://underscorejs.org/docs/underscore.html">Also see underscore or backbone .js for layout inspiration.</a>
+  </div>
+  <div class="clear"></div>
+  <br>
+
+
+
+
+</body>
+
+</html>
