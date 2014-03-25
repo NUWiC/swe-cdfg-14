@@ -1022,7 +1022,7 @@ a {
 .right { float: right; }
 
 #logo {
-  background: url('./images/logo.png') no-repeat transparent;
+  background: url('../images/logo.png') no-repeat transparent;
   width: 100px;
   height: 43px;
   display: inline-block;
